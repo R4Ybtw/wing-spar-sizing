@@ -1,0 +1,29 @@
+{
+  "_comment": "Single source of truth (SI units). Read by MATLAB (jsondecode) and by cad/make_wing_step.py.",
+  "name": "Example 4 kg UAV",
+  "mass": 4.0,
+  "span": 2.4,
+  "chord": 0.25,
+  "airfoil": "4412",
+  "a0_per_rad": 6.0,
+  "alpha_L0_deg": -4.0,
+  "_airfoil_note": "a0 and alpha_L0 are placeholders typical of a viscous NACA 4412 at Re ~4e5. XFOIL values from the airfoil-polars project (lift slope over 0-6 deg, zero-lift angle) replace them.",
+  "CL_max": 1.2,
+  "n_limit": 4.0,
+  "factor_of_safety": 1.5,
+  "V_design": 25.0,
+  "rho": 1.225,
+  "spar_x_over_c": 0.25,
+  "skin_clearance": 0.002,
+  "material": {
+    "name": "Aluminium 6061-T6",
+    "E": 68.9e9,
+    "nu": 0.33,
+    "Fty": 276e6,
+    "Ftu": 310e6,
+    "density": 2700
+  },
+  "tip_deflection_limit": 0.05,
+  "buckling_knockdown": 0.3,
+  "n_segments": 10
+}
